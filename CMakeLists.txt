@@ -26,7 +26,7 @@ catkin_package(
 
 include_directories(${catkin_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS})
 
-add_executable(fake_localization fake_localization.cpp)
+add_executable(fake_localization src/fake_localization.cpp)
 target_link_libraries(fake_localization
     ${catkin_LIBRARIES}
     ${Boost_LIBRARIES}
@@ -35,7 +35,7 @@ add_dependencies(fake_localization ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_
 
 install(
     PROGRAMS
-       static_odom_broadcaster.py
+       scripts/static_odom_broadcaster.py
     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
