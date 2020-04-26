@@ -9,7 +9,6 @@ Specifically, fake_localization converts odometry data into pose, particle cloud
 
 ####  Nodes
 
-fake_localization
 fake_localization substitutes for a localization system, providing a subset of the ROS API used by amcl.
 
 ##### Subscribed Topics
